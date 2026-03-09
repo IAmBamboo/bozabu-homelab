@@ -15,7 +15,13 @@ jobs:
           host: ${{ secrets.PI_HOST }}
           username: ${{ secrets.PI_USER }}
           key: ${{ secrets.PI_KEY }}
+          port: 22
+          options: "-6"
           script: |
             cd ~/pi5-services/www
-            git pull origin main
-            cp -r site/* .
+            git fetch origin main
+            git reset --hard origin/main
+            if [ -d site ]; then
+              cp -r site/* .
+            fi
+            docker-compose -f ~/pi5-services/docker-compose.yml restart web
