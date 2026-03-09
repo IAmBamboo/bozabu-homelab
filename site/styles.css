@@ -1,0 +1,300 @@
+* {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    background-image: url("resources/pexels-yuri-yuhara-4151484.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.top-navigation {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header {
+    background-color: rgba(31, 41, 55, 0.9);
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 32px;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    background-color: #ff7a7aaf;
+    padding: 12px;
+    color: white;
+    font-size: 18px;
+}
+
+.header a {
+    font-size: 18px;
+}
+
+.header a:hover {
+    text-shadow: 0px 0px 2px white,
+                1px 1px 2px white;
+}
+
+.header ul {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.iconText {
+    text-shadow: 2px 2px 10px black,
+                -1px -1px 4px black;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    gap: 16px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconLogo {
+    width: 35px;
+    height: 35px;
+}
+
+.top-section {
+    display: flex;
+    flex-direction: column;
+    padding: 180px 0;
+    align-items: center;
+}
+
+.top-section-left {
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    align-items: center;
+}
+
+.top-section-left h2, .top-section-left p {
+    max-width: 550px;
+    text-align: center;
+}
+
+.top-section-left h2 {
+    color: white;
+    font-size: 48px;
+    text-shadow: 2px 2px 10px black,
+                -1px -1px 3px black;
+    margin: 10px 0;
+}
+
+.top-section-left p {
+    color: #E5E7EB;
+    font-size: 22px;
+    margin: 20px 0;
+    text-shadow: 2px 2px 10px black,
+                    -2px -2px 10px black,
+                    -1px -1px 1px black,
+                    1px 1px 1px black;
+}
+
+.top-section-left button {
+    margin: 30px 0;
+    padding: 12px 24px;
+    border-radius: 8px;
+    background: #ff7a7a;
+    border: 1px solid #ff7a7a;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    flex-shrink: 0;
+}
+
+.top-section-left button:hover {
+    background: white;
+    color: #ff7a7a;
+    border: 1px solid white;
+}
+
+.top-section-right {
+    width: 250px;
+    height: 250px;
+    padding-top: 90px;
+}
+
+.middle-image {
+    width: 160px;
+    height: 160px;
+    border-radius: 20%;
+    border: 3px solid #ff7a7a;
+    flex-shrink: 0;
+}
+
+.middle-image-text {
+    margin: 10px 0;
+    width: 160px;
+    color: #1F2937;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.middle-section {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.middle-title {
+    margin-top: 30px;
+    color: #1F2937;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.middle-image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 40px 0;
+}
+
+.lower-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("resources/pexels-aleksandar-pasaric-2341830.jpg");
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 0;
+}
+
+.lower-section-quote {
+    padding: 200px 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p.quote, .quoteauthor {
+    text-shadow: 2px 2px 5px black,
+                    -2px -2px 6px black;
+}
+
+p.quote {
+    color: #E5E7EB;
+    font-size: 32px;
+    font-style: italic;
+    text-align: center;
+    max-width: 500px;
+}
+.quoteauthor {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.newsletter {
+    align-self: center;
+    background-color: rgba(83, 71, 245, 0.8);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    gap: 20px;
+}
+
+.newsletter-text h2 {
+    color: white;
+    text-shadow: 2px 2px 10px black;
+}
+
+.newsletter-text p {
+    color: #E5E7EB;
+    text-shadow: 2px 2px 8px black;
+    font-size: 18px;
+}
+
+.newsletter button {
+    padding: 12px 36px;
+    border-radius: 8px;
+    background: rgba(83, 71, 245, 0.2);
+    border: 1px solid white;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    flex-shrink: 0;
+}
+
+.newsletter button:hover {
+    background: white;
+    color: rgb(83, 71, 245);
+    border: 1px solid rgb(83, 71, 245);
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #1F2937;
+    padding: 24px;
+    color: white;
+    font-size: 18px;
+}
+
+@media(min-width: 900px) {
+    .top-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 180px 90px;
+        gap: 90px;
+    }
+    .lower-section, .lower-section-quote {
+        align-items: flex-end;
+    }
+    .top-section-right {
+        padding-top: 0;
+    }
+    .top-section-left h2, .top-section-left p, p.quote {
+        text-align: left;
+    }
+    .top-section-left button {
+        align-self: flex-start;
+    }
+    .newsletter {
+        flex-direction: row;
+        gap: 120px;
+        padding: 30px 90px;
+    }
+}
