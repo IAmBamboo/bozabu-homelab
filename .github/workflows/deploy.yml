@@ -22,4 +22,5 @@ jobs:
 
       - name: Restart web container
         run: |
-          docker-compose -f ~/pi5-services/docker-compose.yml restart web
+          cd ~/pi5-services
+          docker restart web
