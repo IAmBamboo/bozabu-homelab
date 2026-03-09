@@ -12,7 +12,7 @@ jobs:
       - name: Deploy to Raspberry Pi
         uses: appleboy/ssh-action@master
         with:
-          host: "[${{ secrets.PI_HOST }}]"
+          host: ${{ secrets.PI_HOST }}
           username: ${{ secrets.PI_USER }}
           key: ${{ secrets.PI_KEY }}
           script: |
