@@ -3,25 +3,24 @@ name: Deploy Website
 on:
   push:
     branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    # Run directly on your self-hosted Pi runner
+    runs-on: self-hosted
 
     steps:
-      - name: Deploy to Raspberry Pi
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.PI_HOST }}
-          username: ${{ secrets.PI_USER }}
-          key: ${{ secrets.PI_KEY }}
-          port: 22
-          options: "-6"
-          script: |
-            cd ~/pi5-services/www
-            git fetch origin main
-            git reset --hard origin/main
-            if [ -d site ]; then
-              cp -r site/* .
-            fi
-            docker-compose -f ~/pi5-services/docker-compose.yml restart web
+      - name: Pull latest website changes
+        run: |
+          cd ~/pi5-services/www
+          git fetch origin main
+          git reset --hard origin/main
+          if [ -d site ]; then
+            cp -r site/* .
+          fi
+
+      - name: Restart web container
+        run: |
+          cd ~/pi5-services
+          docker restart web
