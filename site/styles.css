@@ -139,8 +139,8 @@ a {
 .top-section-left .btnA {
     margin: 30px 0;
     padding: 12px 24px;
-    border-radius: 8px;
-    background: #ff7a7a;
+    border-radius: 24px;
+    background-color: #0e0e0e;
     border: 1px solid #ff7a7a;
     font-size: 18px;
     font-weight: bold;
@@ -149,9 +149,7 @@ a {
 }
 
 .top-section-left .btnA:hover {
-    background: white;
-    color: #ff7a7a;
-    border: 1px solid white;
+    background-color: #ff4f4f;
 }
 
 .top-section-right {
@@ -161,14 +159,14 @@ a {
 }
 
 .middle-section {
-    background-color: white;
+    background-color: #0e0e0e;
     display: flex;
     flex-direction: column;
 }
 
 .middle-title {
     margin-top: 30px;
-    color: #1F2937;
+    color: white;
     font-size: 32px;
     font-weight: bold;
     text-align: center;
@@ -274,7 +272,7 @@ p.quote {
 .project-card {
     width: 220px;
     min-height: 340px;
-    background: white;
+    background: #121212;
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 8px 20px rgba(0,0,0,0.55);
@@ -301,7 +299,7 @@ p.quote {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0;
+    background-color: #ffffff0c;
 }
 
 .project-content {
@@ -310,7 +308,7 @@ p.quote {
 
 .project-title {
     font-size: 18px;
-    color: #1F2937;
+    color: white;
     margin-bottom: 6px;
     letter-spacing: 0.5px;
     font-weight: 600;
@@ -319,7 +317,7 @@ p.quote {
 
 .project-description {
     font-size: 13px;
-    color: #4B5563;
+    color: #929292;
     line-height: 1.4;
     font-weight: 400;
     letter-spacing: 0.3px;
@@ -328,7 +326,7 @@ p.quote {
 
 .project-tech {
     font-size: 12px;
-    color: #6B7280;
+    color: #b8b8d4;
     font-weight: 400;
     margin-bottom: 8px;
     letter-spacing: 0.5px;
