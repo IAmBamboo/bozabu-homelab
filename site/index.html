@@ -2,52 +2,98 @@
 <html>
     <head>
         <link rel="stylesheet" href="styles.css?v=1.1">
-        <link rel="icon" href="resources/cherry-blossom-1295009.png">
-        <title>Bamboo Homepage</title>
+        <link rel="icon" href="resources/logos/LotusBua.png">
+        <title>Bozabu Homepage</title>
     </head>
     <!--divider-->
 
     <body>
         <div class="top-navigation"> 
-            <div class="header">
-                <div class="iconText">Bamboo <img class="iconLogo" src="resources/panda-312682.png"></div>
+            <div class="header blur">
+                <div class="iconText"><a href="">Bozabu</a> <img class="iconLogo" src="resources/logos/LotusBua.png"></div>
                 <ul>
                     <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
                 </ul>
             </div>
-            <div class="banner">
-                <p>Join the whitelisted Minecraft server! <b> play.bozabu.ca </b></p>
+            <div class="banner blur">
+                <p>Check out the whitelisted Minecraft server! <b> play.bozabu.ca </b></p>
             </div>
         </div>
         <div class="body">
             <div class="top-section">
-                <div class="top-section-left">
-                    <h2>This website is awesome</h2>
-                    <p>This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast.</p>
-                    <button>Apply Now</button>
+                <div class="top-section-left rounded blur">
+                    <h2>Hi, I'm Tim.</h2>
+                    <p>Full-Stack Developer | Software Engineer | DevOps Enthusiast</p>
+                    <p>I build web and mobile applications using React, Flutter, and modern backend tools. I also enjoy working with self-hosted infrastructure and cloud automation.</p>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/timha612" target="_blank">
+                            <img class="social-icon" src="resources/logos/LI-Logo.png" alt="LinkedIn">
+                        </a>
+                        <a href="https://github.com/IAmBamboo" target="_blank">
+                            <img class="social-icon" src="resources/logos/GitHub_Lockup_White_Clearspace.svg" alt="GitHub">
+                        </a>
+                    </div>
                 </div>
-                <img class="top-section-right" src="resources/cherry-blossom-1295009.png">
+                <img class="top-section-right" src="resources/logos/LotusBua.png">
             </div>
             <div class="middle-section">
-                <div class="middle-title">Some random information!</div>
+                <div class="middle-title">Featured Projects</div>
                 <div class="middle-image-container">
-                    <div class="middle-image-group">
-                        <img class="middle-image" src="resources/kingcat.png">
-                        <div class="middle-image-text">an awesome cat with a crown</div>
+                    <div class="project-card">
+                        <div class="thumbnail-wrapper"> 
+                            <img class="project-thumbnail" src="resources/thumbnails/AQIapp.png">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Air Quality Monitoring App</h3>
+                            <div class="project-tech">
+                                React Native, TypeScript, Firebase
+                            </div>
+                            <p class="project-description">
+                                Mobile app providing real-time air quality data with smart alerts for unhealthy AQI levels.
+                            </p>
+                        </div>
                     </div>
-                    <div class="middle-image-group">
-                        <img class="middle-image" src="resources/rosie01.jpg">
-                        <div class="middle-image-text">it's Rosie!</div>
+                    <div class="project-card">
+                        <div class="thumbnail-wrapper"> 
+                            <img class="project-thumbnail" src="resources/thumbnails/HomeLabThumb.png">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Self-Hosted HomeLab</h3>
+                            <div class="project-tech">
+                                Linux, Docker, Cloudflare API
+                            </div>
+                            <p class="project-description">
+                                A Raspberry Pi home server hosting this website you're on with automated DNS and CI/CD deployment.
+                            </p>
+                        </div>
                     </div>
-                    <div class="middle-image-group">
-                       <img class="middle-image" src="resources/shibaxWs1iqg.jpg">
-                       <div class="middle-image-text">patiently waiting for food!</div>
+                    <div class="project-card">
+                        <div class="thumbnail-wrapper"> 
+                            <img class="project-thumbnail" src="resources/thumbnails/CalorieApp.png">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Calorie Tracking App</h3>
+                            <div class="project-tech">
+                                Flutter, Firebase, OpenFoodFacts API
+                            </div>
+                            <p class="project-description">
+                                Cross-platform mobile app for tracking daily calories and nutritional intake.
+                            </p>
+                        </div>
                     </div>
-                    <div class="middle-image-group">
-                        <img class="middle-image" src="resources/redpanda.jpg">
-                        <div class="middle-image-text">a red panda!</div>
+                    <div class="project-card">
+                        <div class="thumbnail-wrapper"> 
+                            <img class="project-thumbnail" src="resources/thumbnails/AIchatbotapp.png">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">AI Chatbot Assistant</h3>
+                            <div class="project-tech">
+                                JavaScript, PHP, OpenAI API
+                            </div>
+                            <p class="project-description">
+                                Full-stack AI chatbot that answers student questions using voice and text interaction.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -56,12 +102,11 @@
                     <p class="quote">"A ship in harbor is safe, but that is not what ships are built for."</p>
                     <div class="quoteauthor">- John A. Shedd</div>
                 </div>
-                <div class="newsletter">
+                <div class="newsletter rounded blur">
                     <div class="newsletter-text">
-                        <h2>Call to action! It's time!</h2>
-                        <p>Sign up for our newsletter by clicking that button over there! (Non-functioning)</p>
+                        <h2>Let’s connect!</h2>
+                        <p>Reach out to me for collaborations, work opportunities, or just to say hi.</p>
                     </div>
-                    <button>Sign up</button>
                 </div>
             </div>
         </div>
