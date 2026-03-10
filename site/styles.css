@@ -146,10 +146,14 @@ a {
     font-weight: bold;
     color: white;
     flex-shrink: 0;
+    transition: all 0.2s ease;
 }
 
 .top-section-left .btnA:hover {
-    background-color: #ff4f4f;
+    transform: scale(1.1);
+    filter: brightness(1.2);
+    box-shadow: 0 0 6px #ff7a7acb;
+    background-color: #ff7a7a;
 }
 
 .top-section-right {
@@ -278,12 +282,13 @@ p.quote {
     box-shadow: 0 8px 20px rgba(0,0,0,0.55);
     display: flex;
     flex-direction: column;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 28px rgba(0,0,0,0.6);
+    transform: translateY(-16px);
+
+    box-shadow: 0 0 6px #ffffff8e;
 }
 
 .project-thumbnail {
@@ -344,14 +349,14 @@ p.quote {
 .social-icon {
     height: 32px;
     width: auto;
-    transition: transform 0.2s ease, filter 0.2s ease;
+    transition: all 0.2s ease;
     margin-right: 20px;
     margin-left: 5px;
 }
 
 .social-icon:hover {
     transform: scale(1.1);
-    filter: brightness(1.2);
+    filter: brightness(1.6);
 }
 
 @media(min-width: 1150px) {
