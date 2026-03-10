@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="projects_styles.css">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="icon" href="resources/logos/LotusBua.png">
+    <title>Bozabu Projects</title>
+</head>
+<body>
+    <div class="top-navigation">
+        <!-- same header as homepage -->
+        <div class="header blur">
+            <div class="iconText"><a href="index.html">Bozabu</a> <img class="iconLogo" src="resources/logos/LotusBua.png"></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Projects</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="projects-body">
+        <div class="projects-container">
+
+            <div class="project-big-card">
+                <div class="project-big-image">
+                    <img src="resources/project_images/HomeLabPhysicalSetup.jpg" alt="Air Quality App">
+                </div>
+                <div class="project-big-content">
+                    <div class="project-block project-block-top">
+                        <span class="project-type-label">Personal Project</span>
+                        <h2>Self-Hosted HomeLab & Infrastructure</h2>
+                        <div class="project-tech">
+                            <span>Raspberry Pi</span>
+                            <span>Linux</span>
+                            <span>Docker Compose</span>
+                            <span>Cloudflare API</span>
+                            <span>TCP/UDP Tunneling</span>
+                            <span>GitHub Actions (CI/CD)</span>
+                        </div>
+                        <p>A fully self-hosted homelab running on Raspberry Pi hardware that hosts this website and a game server, using Docker containers and automated DNS management.</p>
+                    </div>
+                    <div class="project-block project-block-middle">
+                        <ul>
+                            <li>Built and managed an ARM-based self-hosted environment for a public website and game server using Docker Compose.</li>
+                            <li>Automated DDNS with Cloudflare API to proactively maintain service availability across rotating IPv6 assignments.</li>
+                            <li>Automated IPv6 monitoring and DNS updates via Cloudflare to ensure reliable service access while bypassing ISP CGNAT.</li>
+                            <li>Configured SRV and AAAA DNS records to enable domain access and service discovery.</li>
+                            <li>Implemented a CI/CD pipeline using GitHub Actions to automatically deploy website updates to Docker on Raspberry Pi.</li>
+                        </ul>
+                    </div>
+                    <div class="project-block project-block-bottom">
+                        <span class="btn-disabled">Live Infrastructure - Currently Hosting This Site</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-big-card">
+                <div class="project-big-image">
+                    <img src="resources/project_images/AQIDemoMock.png" alt="Air Quality App">
+                </div>
+                <div class="project-big-content">
+                    <div class="project-block project-block-top">
+                        <span class="project-type-label">Capstone Project</span>
+                        <h2>Air Quality Monitoring App</h2>
+                        <div class="project-tech">
+                            <span>React Native</span>
+                            <span>Expo</span>
+                            <span>TypeScript</span>
+                            <span>Firebase</span>
+                        </div>
+                        <p>A real-time location-based air quality monitoring app providing modular UI components, push notifications, and health insights.</p>
+                    </div>
+                    <div class="project-block project-block-middle">
+                        <ul>
+                            <li>Collaborated with a 5-person team to develop an app that provides real-time location-based air quality monitoring.</li>
+                            <li>Engineered an event-driven notification system with rate limiting to prevent repeated alerts during prolonged AQI events.</li>
+                            <li>Integrated AQI data fetching and background Expo workflows with Firebase for data validation and real-time logging.</li>
+                            <li>Built modular UI components displaying AQI levels, health insights, and survey eligibility.</li>
+                        </ul>
+                    </div>
+                    <div class="project-block project-block-bottom">
+                        <p>Image is a mockup. The real application cannot be shared due to capstone NDA restrictions.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-big-card">
+                <div class="project-big-image">
+                    <img src="resources/project_images/CalorieTrackerDemoMock.png" alt="Calorie Tracker App">
+                </div>
+                <div class="project-big-content">
+                    <div class="project-block project-block-top">
+                        <span class="project-type-label">Application Development Project</span>
+                        <h2>Calorie Tracker App</h2>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>Dart</span>
+                            <span>Firebase</span>
+                            <span>Cloud Firestore</span>
+                            <span>OpenFoodFacts API</span>
+                        </div>
+                        <p>A cross-platform Flutter mobile app that allows users to log meals, track daily calories, and manage nutritional goals using real food data from OpenFoodFacts API.</p>
+                    </div>
+                    <div class="project-block project-block-middle">
+                        <ul>
+                            <li>Developed a cross-platform Flutter app using Firebase for authentication and Firestore to track daily calories and nutrition.</li>
+                            <li>Integrated OpenFoodFacts API to allow users to search and log items with accurate nutritional data and serving sizes.</li>
+                            <li>Implemented per-user daily logs and calorie limits in Firestore, allowing review of past logged data.</li>
+                            <li>Tested the application with 100+ food items across multiple user sessions to ensure stable data storage and retrieval.</li>
+                        </ul>
+                    </div>
+                    <div class="project-block project-block-bottom">
+                        <a href="https://github.com/IAmBamboo/CalorieTrackerApp/" class="btnA">Source Code</a>
+                        <a href="https://www.youtube.com/watch?v=M9tKhn7N6Ns" class="btnB">View Demo ➜</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-big-card">
+                <div class="project-big-image">
+                    <img src="resources/project_images/AIChatbotDemoMock.png" alt="Air Quality App">
+                </div>
+                <div class="project-big-content">
+                    <div class="project-block project-block-top">
+                        <span class="project-type-label">Capstone Project</span>
+                        <h2>AI Chatbot Assistant</h2>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                            <span>OpenAI API</span>
+                        </div>
+                         <p>A full-stack AI chatbot assistant delivering real-time, age-appropriate responses using the OpenAI API and a multimodal pop-up interface.</p>
+                    </div>
+                    <div class="project-block project-block-middle">
+                        <ul>
+                            <li>Collaborated with a 5-person team to develop a full-stack AI chatbot that provides real-time responses to student questions.</li>
+                            <li>Integrated the OpenAI API with backend services to generate context-aware answers while maintaining educational and age-appropriate responses.</li>
+                            <li>Built a multimodal chatbot interface supporting both voice and text input within a dynamic pop-up UI.</li>
+                            <li>Implemented prompt engineering strategies to guide AI responses toward accurate and relevant educational content.</li>
+                            <li>Led technical deployment and troubleshooting, ensuring API reliability, proper error handling, and successful delivery of client requirements.</li>
+                        </ul>
+                    </div>
+                    <div class="project-block project-block-bottom">
+                        <p>Image is a mockup. The real application cannot be shared due to capstone NDA restrictions.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-big-card">
+                <div class="project-big-image">
+                    <img src="resources/project_images/ShizukaniUnfinishedDemo.png" alt="Air Quality App">
+                </div>
+                <div class="project-big-content">
+                    <div class="project-block project-block-top">
+                        <span class="project-type-label">Currently Under Development</span>
+                        <h2>Wanikani React App</h2>
+                        <div class="project-tech">
+                            <span>React Native</span>
+                            <span>Expo</span>
+                            <span>TypeScript</span>
+                            <span>Wanikani API</span>
+                        </div>
+                         <p>A React Native app for learning Japanese characters and vocabulary using the Wanikani API.</p>
+                    </div>
+                    <div class="project-block project-block-middle">
+                        <ul>
+                            <li>This app will use the Wanikani API to fetch user data and provide a mobile interface for learning Japanese characters and vocabulary.</li>
+                            <li>Features will include spaced repetition flashcards, progress tracking, and customizable study sessions.</li>
+                            <li>Developing as a personal passion project inspired by my interest in studying Japanese.</li>
+                        </ul>
+                    </div>
+                    <div class="project-block project-block-bottom">
+                        <a href="" class="btnDisabled">Source Code</a>
+                        <a href="" class="btnDisabled">View Demo ➜</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="footer">
+        Developed by Tim - automated CI/CD deployment on a Raspberry Pi 5.
+    </div>
+</body>
+</html>
