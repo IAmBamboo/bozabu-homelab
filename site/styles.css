@@ -354,7 +354,7 @@ p.quote {
     filter: brightness(1.2);
 }
 
-@media(min-width: 900px) {
+@media(min-width: 1150px) {
     body {
         background-position-y: -900px;
     }
