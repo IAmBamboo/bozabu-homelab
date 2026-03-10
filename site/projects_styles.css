@@ -90,7 +90,7 @@ li {
 .project-big-card {
     display: flex;
     flex-direction: row;
-    background-color: white;
+    background-color: #121212;
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 8px 24px rgba(0,0,0,0.25);
@@ -157,7 +157,7 @@ li {
 .project-big-content p {
     font-size: 16px;
     line-height: 1.6;
-    color: #d6e0e6;
+    color: #929292;
     font-weight: 600;
 }
 
@@ -173,7 +173,7 @@ li {
     font-size: 14px;
     line-height: 1.6;
     margin-bottom: 10px;
-    color: #363d41c0;
+    color: #818181;
 }
 
 .project-buttons {
@@ -203,6 +203,10 @@ li {
     transition: background-color 0.2s ease;
 }
 
+.project-block-bottom .btnB:hover {
+    background-color: #ff4f4f;
+}
+
 .project-block-bottom .btnDisabled {
     padding: 10px 24px;
     border: 1px solid #e0e0e0;
@@ -214,10 +218,6 @@ li {
     pointer-events: none;
     opacity: 0.7;
     text-decoration: none;
-}
-
-.project-block-bottom .btnB:hover {
-    background-color: #ff4f4f;
 }
 
 .project-block-bottom p {
@@ -235,6 +235,10 @@ li {
     padding: 24px;
     color: white;
     font-size: 18px;
+}
+
+.white {
+    color: white;
 }
 
 @media(max-width: 900px) {
