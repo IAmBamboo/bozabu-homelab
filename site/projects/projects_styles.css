@@ -40,6 +40,10 @@ li {
     padding: 8px 32px;
 }
 
+.header:hover {
+    background-color: rgba(31, 41, 55, 1);
+}
+
 .header ul {
     display: flex;
     gap: 24px;
